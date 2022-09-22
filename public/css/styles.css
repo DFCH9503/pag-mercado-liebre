@@ -1,0 +1,37 @@
+/*Variables creadas con :root*/
+
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste:#1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro:#ebebeb;
+    --Verde:#39b54a;
+}
+
+body{
+    background-color: var(--Amarillo);
+    font-family: 'Roboto';
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripciones{
+    font-size: 16px;
+}
+
+ul #texto li{
+    font-size: 12px;
+    font-weight:bold;
+}
+
