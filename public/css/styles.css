@@ -1,37 +1,270 @@
 /*Variables creadas con :root*/
 
-:root{
-    --Amarillo: #EAC926;
-    --Azul: #03264C;
-    --Celeste:#1259c3;
-    --GrisOscuro: #666;
-    --GrisClaro:#ebebeb;
-    --Verde:#39b54a;
+:root {
+  --Amarillo: #eac926;
+  --Azul: #03264c;
+  --Celeste: #1259c3;
+  --GrisOscuro: #666;
+  --GrisClaro: #ebebeb;
+  --Verde: #39b54a;
 }
 
-body{
-    background-color: var(--Amarillo);
-    font-family: 'Roboto';
+
+/* SELECTOR DE ETIQUETA */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.titulares{
-    font-size: 24px;
+body {
+  background-color: var(--GrisClaro);
+  font-family: "Roboto";
+  width: 100%;
+  margin: 0px;
 }
 
-.precios{
-    font-size: 18px;
+header{
+  /* border: solid 5px black; */
+  background-color: var(--Amarillo);
 }
 
-.descuentos{
+form{
+  /* border: 5px solid darkblue; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main{
+  /* border: 5px solid red; */
+  margin: auto;
+  width: 90%;
+}
+
+section{
+  /* border: 5px dashed darkmagenta; */
+  background-color: var(--GrisClaro);
+  padding-bottom: 10px;
+}
+
+article{
+  border-top: 1px solid var(--GrisOscuro);
+  display: flex;
+  position:relative;
+}
+
+/* p{
+  border: dotted 2px darkorange;
+} */
+
+footer {
+  /* border: 5px solid darkolivegreen; */
+  text-align: center;
+  background-color: white;
+  line-height: 22px;
+  padding: 0.5rem;
+}
+
+/* SELECTOR DE CLASS */
+/* CONTAINER Y CHILD */
+.container {
+  margin: auto;
+  width: 50vw;
+  /* Center child horizontally*/
+  display: flex;
+  justify-content: center;
+}
+
+.child {
+  width: 25vw;
+  height: 8vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo{
+  width: 50%;
+}
+
+.nav-bar-container{
+  display: none;
+}
+
+/* .nav-bar{
+  border: 5px dashed darkgreen;
+} */
+
+.banner {
+  /* border: 5px dashed salmon; */
+  width: 100%;
+  
+}
+
+.img-producto {
+  /* border: 2px dotted darkgoldenrod; */
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  order:-1;
+}
+
+.titulares {
+  /* border: 5px dashed darkgoldenrod;  */
+  font-size: 24px;
+  width: 100%;
+}
+
+.precios {
+  font-size: 18px;
+  flex-grow: 0.3;
+}
+
+.descuentos {
+  font-size: 16px;
+  color: var(--Verde);
+  flex-grow: 0.7;
+}
+
+.descripciones {
+  /* font-size: 16px; */
+  display: none;
+}
+
+.texto {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--GrisOscuro);
+}
+
+.burger-menu {
+  background-color: var(--Azul);
+  color: var(--GrisClaro);
+  padding: 20px 10px;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.logo-navbar{
+  /* border: 5px dashed magenta; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.centrado {
+  /* border: 5px dashed lightseagreen; */
+  text-align: center;
+  margin: auto;
+}
+
+.productos{
+  box-shadow: 0px 0px 10px rgb(100 , 100 , 100);
+}
+
+
+/* SELECTORES COMPUESTOS */
+/* RECORDAR QUE LOS SELECTORES ANIDADOS PUEDEN SERVIR PARA APLICAR ESTILOS A SOLO UNA PARTE, ACÁ SOLO COLOREA LOS ICONOS DE FOOTER */
+footer .fa-solid {
+  color: var(--Celeste);
+}
+
+main section article i{
+  display:block;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid var(--Verde);
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--Verde);
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+/* article p{
+  border: 2px dotted darkslategray;
+} */
+
+
+@media(min-width:361px) {
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media(min-width:768px) {
+  .descripciones{
+    display: block;
     font-size: 16px;
+  }
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .productos{
+    width:49%;
+  }
+
+
+  .img-logo{
+    width: 33.3%;
+  }
+
+  form{
+    width: 33.3%;
+  }
+
+  .centrado{
+    width: 33.3%;
+  }
+
+  .nav-bar-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container{
+    display: none;
+  }
+
+  
 }
 
-.descripciones{
-    font-size: 16px;
+@media (min-width:1024px) {
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .productos{
+    width:24%;
+  }
+  
 }
 
-ul #texto li{
-    font-size: 12px;
-    font-weight:bold;
-}
+
 
