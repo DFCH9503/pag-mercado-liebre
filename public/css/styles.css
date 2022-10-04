@@ -29,14 +29,6 @@ header{
   background-color: var(--Amarillo);
 }
 
-form{
-  /* border: 5px solid darkblue; */
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 main{
   /* border: 5px solid red; */
@@ -65,7 +57,7 @@ footer {
   text-align: center;
   background-color: white;
   line-height: 22px;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 /* SELECTOR DE CLASS */
@@ -167,6 +159,62 @@ footer {
   box-shadow: 0px 0px 10px rgb(100 , 100 , 100);
 }
 
+.formulario-header{
+  /* border: 5px solid darkblue; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-header{
+  width: 75%;
+  font-size: 1rem;
+}
+
+.formulario-register{
+  border: 5px solid darkgreen;
+  padding: 1rem;
+}
+
+.label-register{
+  border: 5px dashed lightcoral;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-register{
+  border: 5px dotted darkmagenta;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.formulario-login{
+  border: 5px solid darkgreen;
+  padding: 1rem;
+}
+
+.label-login{
+  border: 5px dashed lightcoral;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-login{
+  border: 5px dotted darkmagenta;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.button{
+  font-size: 16px;
+}
 
 /* SELECTORES COMPUESTOS */
 /* RECORDAR QUE LOS SELECTORES ANIDADOS PUEDEN SERVIR PARA APLICAR ESTILOS A SOLO UNA PARTE, ACÁ SOLO COLOREA LOS ICONOS DE FOOTER */
@@ -225,7 +273,7 @@ main section article i{
     width: 33.3%;
   }
 
-  form{
+  .formulario-header{
     width: 33.3%;
   }
 
