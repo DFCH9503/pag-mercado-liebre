@@ -7,6 +7,8 @@
   --GrisOscuro: #666;
   --GrisClaro: #ebebeb;
   --Verde: #39b54a;
+  --Boton-submit: #0022AA;
+  --Boton-reset: #FA2B29; 
 }
 
 
@@ -57,8 +59,10 @@ footer {
   text-align: center;
   background-color: white;
   line-height: 22px;
-  padding: 1rem;
+
 }
+
+
 
 /* SELECTOR DE CLASS */
 /* CONTAINER Y CHILD */
@@ -123,8 +127,16 @@ footer {
 }
 
 .descripciones {
-  /* font-size: 16px; */
+  font-size: 16px;
   display: none;
+  transition: all , 0.5s;
+}
+
+
+.texto-strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--GrisOscuro);
 }
 
 .texto {
@@ -148,6 +160,12 @@ footer {
   flex-wrap: wrap;
 }
 
+.section{
+  /* border: 3px dotted red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 0rem;
+}
 
 .centrado {
   /* border: 5px dashed lightseagreen; */
@@ -156,8 +174,10 @@ footer {
 }
 
 .productos{
-  box-shadow: 0px 0px 10px rgb(100 , 100 , 100);
+  box-shadow: none;
+  padding: 0.3rem;
 }
+
 
 .formulario-header{
   /* border: 5px solid darkblue; */
@@ -168,59 +188,126 @@ footer {
 }
 
 .input-header{
-  width: 75%;
+  width: 70%;
   font-size: 1rem;
 }
 
 .formulario-register{
-  border: 5px solid darkgreen;
+  /* border: 5px solid darkgreen; */
   padding: 1rem;
 }
 
 .label-register{
-  border: 5px dashed lightcoral;
-  display: flex;
-  justify-content: center;
+  /* border: 5px dashed lightcoral; */
+  display: none;
+  /* justify-content: center; */
   font-size: 18px;
   font-weight: bold;
 }
 
-.input-register{
-  border: 5px dotted darkmagenta;
+.label-register-mobile{
+  font-size: 18px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+}
+
+
+.div-input-register{
+  /* border: 5px dotted darkmagenta; */
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+.div-input-register-check{
+  /* border: 5px dotted darkred; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+
+.input-register{
+  font-size: 1rem;
 }
 
 .formulario-login{
-  border: 5px solid darkgreen;
+  /* border: 5px solid darkgreen; */
   padding: 1rem;
 }
 
 .label-login{
-  border: 5px dashed lightcoral;
-  display: flex;
-  justify-content: center;
+  /* border: 5px dashed lightcoral; */
+  display: none;
+  /* justify-content: center; */
   font-size: 18px;
   font-weight: bold;
 }
 
-.input-login{
-  border: 5px dotted darkmagenta;
+.div-input-login{
+  /* border: 5px dotted darkmagenta; */
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  padding: 0.6rem;
 }
 
-.button{
-  font-size: 16px;
+.input-login{
+  font-size: 1rem;
 }
+
+.button-submit{
+  font-size: 16px;
+  padding: 0.2rem;
+  transition: all 0.5s;
+}
+
+
+.button-reset{
+  font-size: 16px;
+  padding: 0.2rem;
+  transition: all 0.5s;
+}
+
+
+
+
+.container-div-footer{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.div-footer{
+  /* border: 3px dotted magenta; */
+  width: 32%;
+  transition: all 0.5s;
+  /* border: 3px dotted lightseagreen; */
+}
+
+
+
+.div-img-footer{
+  padding: 0.2rem;
+}
+
+
 
 /* SELECTORES COMPUESTOS */
 /* RECORDAR QUE LOS SELECTORES ANIDADOS PUEDEN SERVIR PARA APLICAR ESTILOS A SOLO UNA PARTE, ACÁ SOLO COLOREA LOS ICONOS DE FOOTER */
 footer .fa-solid {
+  /* border: 3px dotted darkgoldenrod; */
   color: var(--Celeste);
+  transition: all 0.5s;
 }
+
+footer .text-bottom{
+  /* border: 4px dashed blueviolet; */
+  display: flex;
+  justify-content: center;
+  
+}
+
 
 main section article i{
   display:block;
@@ -233,14 +320,14 @@ main section article i{
   padding: 5px;
   color: var(--Verde);
   position: absolute;
-  right: 20px;
-  top: -15px;
+  right: 10px;
+  top: -32px;
+  transition: all 0.5s;
 }
 
-/* article p{
-  border: 2px dotted darkslategray;
-} */
 
+
+/* VERSIÓN MOBILE */
 
 @media(min-width:361px) {
 
@@ -251,6 +338,8 @@ main section article i{
   }
 
 }
+
+/* VERSIÓN TABLET */
 
 @media(min-width:768px) {
   .descripciones{
@@ -284,6 +373,7 @@ main section article i{
   .nav-bar-container{
     display: flex;
     flex-wrap: wrap;
+    padding: 0.3rem;
   }
 
   .nav-bar{
@@ -297,8 +387,24 @@ main section article i{
     display: none;
   }
 
+  .label-register{
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-input-register-check{
+    justify-content: center;
+  }
+
+  .label-login{
+    display: flex;
+    justify-content: center;
+  }
+
   
 }
+
+/* VERSIÓN LAPTOP */
 
 @media (min-width:1024px) {
 
@@ -312,6 +418,38 @@ main section article i{
     width:24%;
   }
   
+  .productos:hover{
+    box-shadow: 0px 0px 10px rgb(100 , 100 , 100);
+  }
+
+  .productos:hover .fa-solid{
+    transform: rotate(-90deg);
+  }
+
+  .productos:hover .descripciones{
+    border: 3px dotted var(--Verde);
+  }
+
+  .button-submit:hover{
+    background-color: var(--Boton-submit);
+    color: var(--GrisClaro);
+  }
+
+  .button-reset:hover{
+    background-color: var(--Boton-reset);
+    color: var(--GrisClaro);
+  }
+
+  .div-footer:hover{
+    box-shadow: 0px 0px 10px rgb(100 , 100 , 100);
+    /* border: 3px dotted magenta; */
+  }
+
+  .div-footer:hover .fa-solid{
+    color: var(--Amarillo);
+  }
+
+
 }
 
 

@@ -56,62 +56,82 @@
     <form action="/" method="GET" class="formulario-register">
         <div>
             <label for="name" class="label-register">Nombre y apellido</label>
-            <input type="text" placeholder="Nombre y apellido" id="name" name="name" class="input-register">
+            <div class="div-input-register">
+                <input type="text" placeholder="Nombre y apellido" id="name" name="name" class="input-register">
+            </div>
         </div>
 
         <div>
             <label for="user-name" class="label-register">Nombre de usuari@</label>
-            <input type="text" placeholder="Nombre de usuari@" id="user-name" name="user-name" class="input-register">
+            <div class="div-input-register">
+                <input type="text" placeholder="Nombre de usuari@" id="user-name" name="user-name" class="input-register">
+            </div>
         </div>
 
         <div>
             <label for="email" class="label-register">Email</label>
-            <input type="email" placeholder="E-mail" id="email" name="email" class="input-register">
+            <div class="div-input-register">
+                <input type="email" placeholder="E-mail" id="email" name="email" class="input-register">
+            </div>
         </div>
 
         <div>
             <label for="birth-date" class="label-register">Fecha de nacimiento</label>
-            <input type="date" id="birth-date" name="birth-date" class="input-register">
+            <div class="div-input-register">
+                <input type="date" id="birth-date" name="birth-date" class="input-register">
+            </div>
         </div>
 
         <div>
             <label for="adress" class="label-register">Domicilio</label>
-            <input type="text" placeholder="Domicilio" id="adress" name="adress" class="input-register">
+            <div class="div-input-register">
+                <input type="text" placeholder="Domicilio" id="adress" name="adress" class="input-register">
+            </div>
         </div>
 
         <div>
-            <label for="profile" class="label-register">Perfil de usuario</label>
-            <input type="radio" id="profile" name="profile" class="input-register">Comprador
-            <input type="radio" id="profile" name="profile" class="input-register">Vendedor
+            <label for="profile" class="label-register-mobile">Perfil de usuario</label>
+            <div class="div-input-register">
+                <input type="radio" id="profile" name="profile" class="input-register">Comprador
+                <input type="radio" id="profile" name="profile" class="input-register">Vendedor
+            </div>
         </div>
 
         <div>
-            <label for="interes" class="label-register">Intereses</label>
-            <input type="checkbox" id="interes" name="interes" class="input-register">Electro
-            <input type="checkbox" id="interes" name="interes" class="input-register">Moda
-            <input type="checkbox" id="interes" name="interes" class="input-register">Hogar
-            <input type="checkbox" id="interes" name="interes" class="input-register">Jugueteria
-            <input type="checkbox" id="interes" name="interes" class="input-register">Vida sana
+            <label for="interes" class="label-register-mobile">Intereses</label>
+            <div class="div-input-register-check">
+                <input type="checkbox" id="interes" name="interes" class="input-register">Electro
+                <input type="checkbox" id="interes" name="interes" class="input-register">Moda
+                <input type="checkbox" id="interes" name="interes" class="input-register">Hogar
+                <input type="checkbox" id="interes" name="interes" class="input-register">Jugueteria
+                <input type="checkbox" id="interes" name="interes" class="input-register">Vida sana
+            </div>
         </div>
 
         <div>
-            <label for="user-photo" class="label-register">Foto de usuario</label>
-            <input type="file" accept=".jpg , .png" id="user-photo" name="user-photo" class="input-register">
+            <label for="user-photo" class="label-register-mobile">Foto de usuario</label>
+            <div class="div-input-register">
+                <input type="file" accept=".jpg , .png" id="user-photo" name="user-photo" class="input-register">
+            </div>
         </div>
 
         <div>
             <label for="password" class="label-register">Contraseña</label>
-            <input type="password" id="password" name="password" class="input-register">
+            <div class="div-input-register">
+                <input type="password" id="password" name="password" class="input-register" placeholder="Contraseña">
+            </div>
         </div>
 
         <div>
             <label for="password-confirm" class="label-register">Confirmar contraseña</label>
-            <input type="password" id="password-confirm" name="password-confirm" class="input-register">
+            <div class="div-input-register">
+                <input type="password" id="password-confirm" name="password-confirm" class="input-register" placeholder="Confirme contraseña">
+            </div>
         </div>
 
         <div>
-            <button type="submit" class="button">Enviar</button>
-            <button type="reset" class="button">Borrar</button>
+            <button type="submit" class="button-submit">Enviar</button>
+            <button type="reset" class="button-reset">Borrar</button>
         </div>
 
 
@@ -119,20 +139,29 @@
 
 <!--FOOTER-->
 <footer>
-    <div><i class="fa-solid fa-credit-card fa-2xl"></i></div>
-    <strong class="texto">Paga con tarjeta o en efectivo</strong>
-    <p class="texto">Con Mercado Liebre Cash, tienes cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es seguro!</p>
+    <div class="container-div-footer">
+        <div class="div-footer">
+            <div class="div-img-footer"><i class="fa-solid fa-credit-card fa-2xl"></i></div>
+            <strong class="texto-strong">Paga con tarjeta o en efectivo</strong>
+            <p class="texto">Con Mercado Liebre Cash, tienes cuotas sin interés con tarjeta o efectivo en puntos de pago ¡Y siempre es seguro!</p>
+        </div>
 
-    <div><i class="fa-solid fa-gift fa-2xl"></i></div>
-    <strong class="texto">Envio gratis desde $2500</strong>
-    <p class="texto">Solo por estar registrad@ en Mercado Liebre tienes envios gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+        <div class="div-footer">
+            <div class="div-img-footer"><i class="fa-solid fa-gift fa-2xl"></i></div>
+            <strong class="texto-strong">Envio gratis desde $2500</strong>
+            <p class="texto">Solo por estar registrad@ en Mercado Liebre tienes envios gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+        </div>
 
-    <div><i class="fa-solid fa-user-shield fa-2xl"></i></div>
-    <strong class="texto">Seguridad de principio a fin</strong>
-    <p class="texto">¿No te gusta? ¡Devuélvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido</p>
+        <div class="div-footer">
+            <div class="div-img-footer"><i class="fa-solid fa-user-shield fa-2xl"></i></div>
+            <strong class="texto-strong">Seguridad de principio a fin</strong>
+            <p class="texto">¿No te gusta? ¡Devuélvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido</p>
+        </div>
+    </div>
 
-    <strong>Copyright 1999-2020 MercadoLiebre S.R.L</strong>
+    <div class="text-bottom"><strong>Copyright 1999-2020 MercadoLiebre S.R.L</strong></div>
 
+    
 </footer>
 
 </body>
