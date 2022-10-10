@@ -130,6 +130,8 @@ footer {
   font-size: 16px;
   display: none;
   transition: all , 0.5s;
+  position: relative;
+  z-index: -1;
 }
 
 
@@ -427,7 +429,8 @@ main section article i{
   }
 
   .productos:hover .descripciones{
-    border: 3px dotted var(--Verde);
+    /* border: 3px dotted var(--Verde); */
+    z-index: 1;
   }
 
   .button-submit:hover{
