@@ -57,35 +57,35 @@
         <div>
             <label for="name" class="label-register">Nombre y apellido</label>
             <div class="div-input-register">
-                <input type="text" placeholder="Nombre y apellido" id="name" name="name" class="input-register">
+                <input type="text" placeholder="Nombre y apellido" id="name" name="name" class="input-register" required minlength="4" maxlength="10">
             </div>
         </div>
 
         <div>
             <label for="user-name" class="label-register">Nombre de usuari@</label>
             <div class="div-input-register">
-                <input type="text" placeholder="Nombre de usuari@" id="user-name" name="user-name" class="input-register">
+                <input type="text" placeholder="Nombre de usuari@" id="user-name" name="user-name" class="input-register" required minlength="4" maxlength="10">
             </div>
         </div>
 
         <div>
             <label for="email" class="label-register">Email</label>
             <div class="div-input-register">
-                <input type="email" placeholder="E-mail" id="email" name="email" class="input-register">
+                <input type="email" placeholder="E-mail" id="email" name="email" class="input-register" required minlength="4">
             </div>
         </div>
 
         <div>
             <label for="birth-date" class="label-register">Fecha de nacimiento</label>
             <div class="div-input-register">
-                <input type="date" id="birth-date" name="birth-date" class="input-register">
+                <input type="date" id="birth-date" name="birth-date" class="input-register" required>
             </div>
         </div>
 
         <div>
             <label for="adress" class="label-register">Domicilio</label>
             <div class="div-input-register">
-                <input type="text" placeholder="Domicilio" id="adress" name="adress" class="input-register">
+                <input type="text" placeholder="Domicilio" id="adress" name="adress" class="input-register" required minlength="4">
             </div>
         </div>
 
@@ -111,21 +111,21 @@
         <div>
             <label for="user-photo" class="label-register-mobile">Foto de usuario</label>
             <div class="div-input-register">
-                <input type="file" accept=".jpg , .png" id="user-photo" name="user-photo" class="input-register">
+                <input type="file" accept=".jpg , .png" id="user-photo" name="user-photo" class="input-register" required>
             </div>
         </div>
 
         <div>
             <label for="password" class="label-register">Contraseña</label>
             <div class="div-input-register">
-                <input type="password" id="password" name="password" class="input-register" placeholder="Contraseña">
+                <input type="password" id="password" name="password" class="input-register" placeholder="Contraseña" required>
             </div>
         </div>
 
         <div>
             <label for="password-confirm" class="label-register">Confirmar contraseña</label>
             <div class="div-input-register">
-                <input type="password" id="password-confirm" name="password-confirm" class="input-register" placeholder="Confirme contraseña">
+                <input type="password" id="password-confirm" name="password-confirm" class="input-register" placeholder="Confirme contraseña" required>
             </div>
         </div>
 
